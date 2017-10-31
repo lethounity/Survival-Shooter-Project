@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     Animator anim;
     AudioSource playerAudio;
     PlayerMovement playerMovement;
+
     //PlayerShooting playerShooting;
     bool isDead;
     bool damaged;

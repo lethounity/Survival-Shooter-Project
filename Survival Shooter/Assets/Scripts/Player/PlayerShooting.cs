@@ -8,7 +8,7 @@ public class PlayerShooting : MonoBehaviour
 
 
     float timer;
-    Ray shootRay = new Ray();
+    Ray shootRay /*= new Ray()*/;
     RaycastHit shootHit;
     int shootableMask;
     ParticleSystem gunParticles;
@@ -32,7 +32,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets /* && Time.timeScale != 0*/ )
         {
             Shoot ();
         }
